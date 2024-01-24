@@ -2,15 +2,15 @@
   import { onMount } from "svelte";
   import * as d3 from "d3";
   
-  // let matchSampleWithSpecie = (sample, data) => {
-  //   const foundDataPoint = data.find(
-  //     (datapoint) => datapoint.SAMPLE === sample
-  //   );
-  //   if (foundDataPoint) {
-  //     return foundDataPoint.SPECIES_NAME_PRINT;
-  //   }
-  //   return sample;
-  // };
+  let matchSampleWithSpecie = (sample, data) => {
+    const foundDataPoint = data.find(
+      (datapoint) => datapoint.SAMPLE === sample
+    );
+    if (foundDataPoint) {
+      return foundDataPoint.SPECIES_NAME_PRINT;
+    }
+    return sample;
+  };
 
   // TODO: change this so the string is fetched from the file
   const exampleNewick =
@@ -60,7 +60,7 @@
     return r;
   }
   
-  const jsonFile = 'src/lib/dataset.json';
+  const jsonFile = '/dataset.json';
 
   onMount(() => {
     const taxFilter = document.getElementById("TaxFilter");
@@ -104,7 +104,7 @@
       }
     }
 
-    // Close the dropdown if the user clicks outside of it
+    // Close the dropdown if the user clicks outside of i
     window.onclick = function(e) {
       if (!e.target.matches('.drop-btn-mis')) {
       var myDropdown = document.getElementById("MisFilter");
@@ -128,7 +128,7 @@
         // Console log de JSON-gegevens
         console.log('JSON-gegevens:', jsonData);
 
-        // d3.select('svg').selectAll('text').text((d) => matchSampleWithSpecie(d.data.name, jsonData));
+        d3.select('svg').selectAll('text').text((d) => matchSampleWithSpecie(d.data.name, jsonData));
 
         // Je kunt hier verdere verwerking van de JSON-gegevens uitvoeren
       })
@@ -243,7 +243,6 @@ svg > g:last-of-type text {
           }`
       )
       .attr("text-anchor", (d) => (d.x < 180 ? "start" : "end"))
-      .text((d) => d.data.name.replace(/_/g, " "))
       .on("mouseover", mouseovered(true))
       .on("mouseout", mouseovered(false));
 
