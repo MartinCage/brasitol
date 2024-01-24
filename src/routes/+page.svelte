@@ -163,7 +163,7 @@
 
     const svg = d3
       .create("svg")
-      .attr("viewBox", [-outerRadius + 50, -outerRadius + 450, width, width - 420])
+      .attr("viewBox", [-outerRadius + 50, -outerRadius + 450, width, width - 380])
       .attr("font-family", "sans-serif")
 
     // svg.append("g").call(legend);
