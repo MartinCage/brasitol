@@ -1,9 +1,4 @@
-![logo](https://github.com/MartinCage/InformationDesign/assets/118127943/15c52dcb-ecbb-4150-b24e-54cece4daafe)
-
-# The Pokedex
-Welcome to my project called 'The Pokédex'. I am pursuing a bachelor's degree in Communication and Multimedia Design (CMD) at HvA. Currently, I am in my third year and enrolled in the Information Design minor. In 6 weeks time I had to learn about working with a framework called Svelte, making API calls, generating charts with the D3 library and learn Javascript overall.
-
-## What is The Pokedex?
+## What is The Tree of life?
 This is a project where you can explore interesting data about various species of the brassicaceae.
 
 The application is build for every device and so called full-responsive.
@@ -30,7 +25,7 @@ or check if it is already installed by running the following code
 ### Step 2: Clone repository
 Clone repository by this link: https://github.com/MartinCage/brasitol with the following command:
 ```bash
--- git clone https://github.com/MartinCage/InformationDesign
+-- git clone https://github.com/MartinCage/brasitol
 ```
 
 After that, install npm and the dependencies
@@ -49,4 +44,4 @@ npm run dev
 ## Live Demo
 
 You can see a live demo at:
-https://martijn-information-design.nl/
+https://treeoflifekolen.nl/

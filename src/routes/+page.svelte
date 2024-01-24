@@ -104,7 +104,7 @@
       }
     }
 
-    // Close the dropdown if the user clicks outside of it
+    // Close the dropdown if the user clicks outside of i
     window.onclick = function(e) {
       if (!e.target.matches('.drop-btn-mis')) {
       var myDropdown = document.getElementById("MisFilter");
