@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #FFFCF7;
+}
+.section-tree {
+    padding: 150px;
+}
+
+@media only screen and (max-width: 425px){
+    .section-tree {
+        padding: 25px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .section-tree {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .section-tree {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .section-tree {
+        padding: 50px 150px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .section-tree {
+        padding: 50px 150px;
+    }
+}
